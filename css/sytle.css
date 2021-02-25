@@ -43,6 +43,14 @@ a{
     padding: 8px 12px;
 
 }
+.nav_bar_toggle_button{
+    display:none;
+
+    position: absolute;
+    right:32px;
+    font-size:24px;
+    color:#d49466
+}
 
 /* 반응형 설정 */
 
@@ -54,6 +62,7 @@ a{
         }
 
     .nav_menu{
+        display:none;
         flex-direction: column;
         align-items:center;
         width:100%;
@@ -64,8 +73,17 @@ a{
         text-align:center;
     }
     .nav_sns{
+        display:none;
         justify-content: center;
         width:100%;
         padding-left:0px;
+    }
+    .nav_bar_toggle_button{
+        display: block;
+    }
+
+    .nav_menu.active,
+    .nav_sns.active{
+        display: flex;
     }
 }
